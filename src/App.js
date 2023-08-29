@@ -49,6 +49,7 @@ class App extends Component {
                 result: (eval(checkResult) || "" ) + ""
             })
         } catch (e) {
+            console.error(e)
             this.setState({
                 result: "error"
             })
